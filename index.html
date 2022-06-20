@@ -449,10 +449,54 @@
             </li>
           </ul>
         </div>
+        <form class="subscribe">
+          <b class="subscribe-title">Подпишитесь на рассылку</b>
+          <div class="subscribe-contact">
+            <input type="email" name="email" placeholder="E-mail" />
+            <button class="subscribe-button" type="submit">
+              Подписаться
+              <svg class="icon-send">
+                <use href="./images/icons.svg#icon-icon-send-1"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <form class="modal-form">
+          <div class="modal-form-field">
+            <label for="name">Имя</label>
+            <input type="text" id="name" name="name" />
+          </div>
+
+          <div class="modal-form-field">
+            <label for="tel">Телефон</label>
+            <input type="text" id="tel" name="tel" />
+          </div>
+
+          <div class="modal-form-field">
+            <label for="mail">Почта</label>
+            <input type="email" id="mail" name="mail" />
+          </div>
+
+          <label for="comment">Комментарий</label>
+          <textarea
+            name="comment"
+            id="comment"
+            rows="8"
+            placeholder="Введите текст"
+          ></textarea>
+
+          <input type="checkbox" name="policy" id="policy" />
+          <label for="policy"
+            >Соглашаюсь с рассылкой и принимаю
+            <a href="">Условия договора</a>
+          </label>
+
+          <button type="submit">Отправить</button>
+        </form>
         <button class="close-modal" type="button" data-modal-close="">
           <svg class="close-btn-icon">
             <use href="./images/icons.svg#icon-close-black"></use>
