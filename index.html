@@ -416,6 +416,7 @@
             >
           </address>
         </div>
+        <!--......... Social links ...............-->
         <div class="social">
           <p class="social-text">присоединяйтесь</p>
           <ul class="social-list list">
@@ -449,6 +450,7 @@
             </li>
           </ul>
         </div>
+        <!-- .......... FORM SUBSCRIBE........... -->
         <form class="subscribe">
           <b class="subscribe-title">Подпишитесь на рассылку</b>
           <div class="subscribe-contact">
@@ -463,14 +465,17 @@
         </form>
       </div>
     </footer>
+    <!--................MODAL.............. -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <form class="modal-form">
+          <b class="modal-form-title"
+            >Оставьте свои данные, мы вам перезвоним</b
+          >
           <div class="modal-form-field">
             <label for="name">Имя</label>
             <input type="text" id="name" name="name" />
           </div>
-
           <div class="modal-form-field">
             <label for="tel">Телефон</label>
             <input type="text" id="tel" name="tel" />
@@ -481,21 +486,23 @@
             <input type="email" id="mail" name="mail" />
           </div>
 
-          <label for="comment">Комментарий</label>
-          <textarea
-            name="comment"
-            id="comment"
-            rows="8"
-            placeholder="Введите текст"
-          ></textarea>
+          <div class="modal-form-field">
+            <label for="comment">Комментарий</label>
+            <textarea
+              name="comment"
+              id="comment"
+              placeholder="Введите текст"
+            ></textarea>
+          </div>
+          <div class="checkbox-policy">
+            <input type="checkbox" name="policy" id="policy" />
+            <label for="policy"
+              >Соглашаюсь с рассылкой и принимаю
+              <a href="">Условия договора</a>
+            </label>
+          </div>
 
-          <input type="checkbox" name="policy" id="policy" />
-          <label for="policy"
-            >Соглашаюсь с рассылкой и принимаю
-            <a href="">Условия договора</a>
-          </label>
-
-          <button type="submit">Отправить</button>
+          <button class="modal-button-submit" type="submit">Отправить</button>
         </form>
         <button class="close-modal" type="button" data-modal-close="">
           <svg class="close-btn-icon">
