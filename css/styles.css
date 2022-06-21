@@ -1030,6 +1030,7 @@ header .contact-text:focus {
   height: 18px;
   top: 50%;
   left: 11px;
+  pointer-events: none;
   transform: translateY(-50%);
   fill: #212121;
 
@@ -1038,10 +1039,11 @@ header .contact-text:focus {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-field-row input {
+.form-field-row .field-input {
   width: 100%;
-  padding: 12px 42px;
+  padding: 11px 42px;
 
+  cursor: pointer;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border-color;
@@ -1065,6 +1067,7 @@ header .contact-text:focus {
   transition: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 
 .form-field textarea::placeholder {
@@ -1119,10 +1122,10 @@ header .contact-text:focus {
   border-color: var(--hover-text-color);
 }
 
-.form-field-row .modal-icon:hover,
+/* .form-field-row .modal-icon:hover,
 .form-field-row .modal-icon:focus {
   fill: var(--hover-text-color);
-}
+} */
 
 .form-field-row .field-input:hover+.modal-icon,
 .form-field-row .field-input:focus+.modal-icon {
