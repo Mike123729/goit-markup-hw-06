@@ -1028,8 +1028,14 @@ header .contact-text:focus {
   position: relative;
   display: inline-block;
   width: 100%;
-
+  cursor: pointer;
+  transition: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
+
+
 
 /* иконки в полях */
 .form-field-row .modal-icon {
@@ -1050,13 +1056,9 @@ header .contact-text:focus {
 .form-field-row .field-input {
   width: 100%;
   padding: 11px 42px;
-
-  cursor: pointer;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  transition: border-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 
@@ -1101,6 +1103,20 @@ header .contact-text:focus {
   letter-spacing: 0.03em;
 }
 
+.checkbox-policy:focus~.checkbox-icon {
+  border-color: var(--hover-text-color);
+}
+
+.field-input:focus,
+.form-field textarea:focus {
+  outline: none;
+  border-color: #188CE8
+}
+
+.form-field-row .field-input:focus+.modal-icon {
+  fill: var(--hover-text-color);
+}
+
 /*  .......Кнопка submit.... */
 
 .modal-button-submit {
@@ -1129,19 +1145,7 @@ header .contact-text:focus {
   background-color: #188CE8;
 }
 
-/* ховер на бордер */
-.form-field-row .field-input:hover,
-.form-field textarea:hover,
-.form-field-row .field-input:focus,
-.form-field textarea:focus {
-  border-color: var(--hover-text-color);
-}
 
-
-.form-field-row .field-input:hover+.modal-icon,
-.form-field-row .field-input:focus+.modal-icon {
-  fill: var(--hover-text-color);
-}
 
 .checkbox-icon {
   display: inline-block;
