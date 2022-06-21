@@ -507,14 +507,16 @@
               placeholder="Введите текст"
             ></textarea>
           </div>
-          <div class="checkbox-policy">
-            <input type="checkbox" name="policy" id="policy" />
-            <label for="policy"
-              >Соглашаюсь с рассылкой и принимаю
-              <a href="">Условия договора</a>
-            </label>
-          </div>
-
+          <label class="checkbox-label">
+            <input
+              class="checkbox-policy visually-hidden"
+              type="checkbox"
+              name="policy"
+            />
+            <span class="checkbox-icon"></span>
+            Соглашаюсь с рассылкой и принимаю &nbsp;
+            <a href="">Условия договора</a>
+          </label>
           <button class="modal-button-submit" type="submit">Отправить</button>
         </form>
         <button class="close-modal" type="button" data-modal-close="">
