@@ -469,24 +469,37 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <form class="modal-form">
-          <b class="modal-form-title"
-            >Оставьте свои данные, мы вам перезвоним</b
-          >
-          <div class="modal-form-field">
+          <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
+          <div class="form-field">
             <label for="name">Имя</label>
-            <input type="text" id="name" name="name" />
+            <span class="form-field-row">
+              <input class="field-input" type="text" id="name" name="name" />
+              <svg class="modal-icon">
+                <use href="./images/icons.svg#icon-modal-user"></use>
+              </svg>
+            </span>
           </div>
-          <div class="modal-form-field">
+          <div class="form-field">
             <label for="tel">Телефон</label>
-            <input type="text" id="tel" name="tel" />
+            <span class="form-field-row">
+              <input class="field-input" type="text" id="tel" name="tel" />
+              <svg class="modal-icon">
+                <use href="./images/icons.svg#icon-modal-phone"></use>
+              </svg>
+            </span>
           </div>
 
-          <div class="modal-form-field">
+          <div class="form-field">
             <label for="mail">Почта</label>
-            <input type="email" id="mail" name="mail" />
+            <span class="form-field-row">
+              <input class="field-input" type="email" id="mail" name="mail" />
+              <svg class="modal-icon">
+                <use href="./images/icons.svg#icon-modal-mail"></use>
+              </svg>
+            </span>
           </div>
 
-          <div class="modal-form-field">
+          <div class="form-field">
             <label for="comment">Комментарий</label>
             <textarea
               name="comment"
