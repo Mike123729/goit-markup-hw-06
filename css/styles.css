@@ -966,7 +966,7 @@ header .contact-text:focus {
   background-color: #fff;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-
+  cursor: pointer;
 }
 
 .close-btn-icon {
@@ -1048,7 +1048,7 @@ header .contact-text:focus {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-field-row .field-input {
+.form-field-row .form-field-input {
   width: 100%;
   padding: 11px 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -1106,13 +1106,13 @@ header .contact-text:focus {
   border-color: var(--hover-text-color);
 }
 
-.field-input:focus,
+.form-field-input:focus,
 .form-field textarea:focus {
   outline: none;
   border-color: #188CE8
 }
 
-.form-field-row .field-input:focus+.modal-icon {
+.form-field-row .form-field-input:focus+.modal-icon {
   fill: var(--hover-text-color);
 }
 
