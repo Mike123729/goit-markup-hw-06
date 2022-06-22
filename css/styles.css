@@ -1101,9 +1101,7 @@ header .contact-text:focus {
   letter-spacing: 0.03em;
 }
 
-.checkbox-policy:focus~.checkbox-icon {
-  border-color: var(--hover-text-color);
-}
+
 
 .form-field-input:focus,
 .form-field textarea:focus {
@@ -1145,22 +1143,31 @@ header .contact-text:focus {
 
 
 /* ....checkbox icon....... */
-.checkbox-icon {
-  display: inline-block;
+.checkbox-field {
   width: 16px;
   height: 15px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   border: 2px solid #212121;
   border-radius: 2px;
   margin-right: 7px;
-  transition: border-color;
+  transition: border-color, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
 
-.checkbox-policy:checked+.checkbox-icon {
+.checkbox-icon {
+  width: 16px;
+  height: 15px;
+  fill: #FFFFFF;
+}
+
+.checkbox-policy:checked+.checkbox-field {
   border-color: #2196F3;
   background-color: #2196F3;
-  background-image: url(../images/icon-check.svg);
-  background-size: contain;
-  background-origin: border-box;
+}
+
+.checkbox-policy:focus~.checkbox-field {
+  border-color: var(--hover-text-color);
 }
