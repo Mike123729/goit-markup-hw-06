@@ -1094,6 +1094,7 @@ header .contact-text:focus {
 .checkbox-label {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-top: 20px;
   margin-bottom: 30px;
   font-weight: 400;
