@@ -1144,7 +1144,7 @@ header .contact-text:focus {
 }
 
 
-
+/* ....checkbox icon....... */
 .checkbox-icon {
   display: inline-block;
   width: 16px;
@@ -1164,5 +1164,3 @@ header .contact-text:focus {
   background-size: contain;
   background-origin: border-box;
 }
-
-/* закрыть модалку */
