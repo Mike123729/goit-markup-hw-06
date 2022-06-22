@@ -1165,10 +1165,15 @@ header .contact-text:focus {
 }
 
 .checkbox-policy:checked+.checkbox-field {
-  border-color: #2196F3;
-  background-color: #2196F3;
+  border-color: var(--hover-text-color);
+  background-color: var(--hover-text-color);
 }
 
 .checkbox-policy:focus~.checkbox-field {
   border-color: var(--hover-text-color);
+}
+
+.checkbox-field-link {
+  color: var(--hover-text-color);
+
 }
